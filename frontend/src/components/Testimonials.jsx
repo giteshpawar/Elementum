@@ -1,13 +1,13 @@
 import "./Testimonials.css";
 
-import test1 from "../assets/hero1.jpeg";
-import test2 from "../assets/hero2.jpeg";
-import test3 from "../assets/hero3.jpeg";
-import test4 from "../assets/hero4.jpeg";
-import test5 from "../assets/hero5.jpeg";
-import test6 from "../assets/hero6.jpeg";
-import test7 from "../assets/hero7.jpeg";
-import test8 from "../assets/hero1.jpeg";
+import test1 from "../assets/test1.png";
+import test2 from "../assets/test2.png";
+import test3 from "../assets/test3.png";
+import test4 from "../assets/test4.png";
+import test5 from "../assets/test5.png";
+import test6 from "../assets/test6.png";
+import test7 from "../assets/test7.png";
+import test8 from "../assets/test8.png";
 
 const Testimonials = () => {
   return (

@@ -1,7 +1,7 @@
 import "./Progress.css";
 
-import meeting1 from "../assets/meeting1.jpeg";
-import meeting2 from "../assets/meeting2.jpeg";
+import meeting1 from "../assets/meeting1.png";
+import meeting2 from "../assets/meeting2.png";
 
 const Progress = () => {
   return (
