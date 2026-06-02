@@ -1,0 +1,143 @@
+.services {
+    padding: 120px 5%;
+    background: #f4f4f2;
+}
+
+.heading {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.heading h2 {
+    font-size: 5rem;
+    line-height: .95;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: -3px;
+}
+
+.heading span.canny {
+    background: #dff1dc;
+    padding: 0 14px;
+    border-radius: 25px;
+}
+
+.services-list {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 220px 1fr 50px;
+    align-items: center;
+    gap: 30px;
+    padding: 28px 0;
+    border-top: 1px solid #d8d8d8;
+    transition: .3s;
+}
+
+.service:last-child {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.service:hover {
+    padding-left: 10px;
+}
+
+.service p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.service h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #111;
+}
+
+.service span {
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+@media(max-width:992px) {
+
+    .heading h2 {
+        font-size: 3.8rem;
+    }
+
+    .service {
+        grid-template-columns: 180px 1fr 40px;
+    }
+
+    .service h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:768px) {
+
+    .services {
+        padding: 80px 5%;
+    }
+
+    .heading h2 {
+        font-size: 2.8rem;
+    }
+
+    .service {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .service span {
+        text-align: left;
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:480px) {
+
+    .heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .service h3 {
+        font-size: 1.3rem;
+    }
+}
+
+.can {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.can::before,
+.can::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.can::before {
+    left: 5%;
+    width: 95%;
+    bottom: 22%;
+    border-bottom: 4px solid #f5c14b;
+    transform: rotate(-3deg);
+}
+
+.can::after {
+    left: -2%;
+    width: 108%;
+    bottom: 10%;
+    border-bottom: 5px solid #f5c14b;
+    transform: rotate(-1deg);
+}
