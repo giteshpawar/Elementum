@@ -6,7 +6,7 @@
 
 .testimonials h2 {
     font-size: clamp(3rem, 6vw, 5rem);
-    line-height: .95;
+    line-height: 0.95;
     font-weight: 500;
     color: #111;
     letter-spacing: -2px;
@@ -36,19 +36,19 @@
 }
 
 .card p {
+    max-width: 430px;
+    margin: auto;
     color: #333;
     font-size: 15px;
     line-height: 1.8;
-    max-width: 430px;
-    margin: auto;
 }
 
 .quote-start,
 .quote-end {
-    font-size: 4rem;
-    color: #c8cdca;
-    font-weight: bold;
     position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #c8cdca;
 }
 
 .quote-start {
@@ -66,8 +66,6 @@
     border-radius: 50%;
     object-fit: cover;
 }
-
-/* Left Side */
 
 .a1 {
     width: 70px;
@@ -96,8 +94,6 @@
     top: 280px;
     left: 20px;
 }
-
-/* Right Side */
 
 .a5 {
     width: 40px;
@@ -128,7 +124,6 @@
 }
 
 @media (max-width: 992px) {
-
     .avatar {
         display: none;
     }
@@ -144,7 +139,6 @@
 }
 
 @media (max-width: 768px) {
-
     .testimonials {
         padding: 80px 5%;
     }
@@ -160,7 +154,6 @@
 }
 
 @media (max-width: 480px) {
-
     .testimonials h2 {
         font-size: 2.3rem;
     }
@@ -168,33 +161,4 @@
     .card {
         padding: 25px;
     }
-}
-
-.can {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-}
-
-.can::before,
-.can::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-}
-
-.can::before {
-    left: 5%;
-    width: 95%;
-    bottom: 22%;
-    border-bottom: 4px solid #f5c14b;
-    transform: rotate(-3deg);
-}
-
-.can::after {
-    left: -2%;
-    width: 108%;
-    bottom: 10%;
-    border-bottom: 5px solid #f5c14b;
-    transform: rotate(-1deg);
 }

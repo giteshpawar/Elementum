@@ -4,7 +4,6 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    
 }
 
 .hero-content {
@@ -29,40 +28,43 @@
     display: inline-block;
 }
 
-.thinkers::before {
+.thinkers::before,
+.thinkers::after {
     content: "";
     position: absolute;
+    z-index: -1;
+}
+
+.thinkers::before {
     left: 5%;
     width: 95%;
     bottom: 22%;
     border-bottom: 4px solid #f5c14b;
     transform: rotate(-3deg);
-    z-index: -1;
 }
 
 .thinkers::after {
-    content: "";
-    position: absolute;
     left: -2%;
     width: 108%;
     bottom: 10%;
     border-bottom: 5px solid #f5c14b;
     transform: rotate(-1deg);
-    z-index: -1;
+}
+
+.pink,
+.green {
+    display: inline-block;
+    border-radius: 60px;
 }
 
 .pink {
     background: #f3c3e5;
     padding: 0 16px;
-    border-radius: 60px;
-    display: inline-block;
 }
 
 .green {
     background: #dcefdc;
     padding: 0 26px;
-    border-radius: 60px;
-    display: inline-block;
 }
 
 .hero-content p {
@@ -72,7 +74,6 @@
     line-height: 1.8;
     color: #555;
 }
-
 
 .purple-shape {
     position: absolute;
@@ -85,8 +86,6 @@
     transform: rotate(19deg);
     z-index: 2;
 }
-
-/* Team Images */
 
 .hero-images {
     max-width: 1250px;
@@ -104,8 +103,6 @@
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
-
-/* Simple Up-Down Layout */
 
 .hero-images img:nth-child(1) {
     width: 105px;

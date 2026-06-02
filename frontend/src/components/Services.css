@@ -5,13 +5,12 @@
 
 .heading {
     max-width: 1200px;
-    margin: auto;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
 }
 
 .heading h2 {
     font-size: 5rem;
-    line-height: .95;
+    line-height: 0.95;
     font-weight: 500;
     color: #111;
     letter-spacing: -3px;
@@ -35,7 +34,7 @@
     gap: 30px;
     padding: 28px 0;
     border-top: 1px solid #d8d8d8;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .service:last-child {
@@ -63,8 +62,7 @@
     text-align: right;
 }
 
-@media(max-width:992px) {
-
+@media (max-width: 992px) {
     .heading h2 {
         font-size: 3.8rem;
     }
@@ -78,8 +76,7 @@
     }
 }
 
-@media(max-width:768px) {
-
+@media (max-width: 768px) {
     .services {
         padding: 80px 5%;
     }
@@ -102,8 +99,7 @@
     }
 }
 
-@media(max-width:480px) {
-
+@media (max-width: 480px) {
     .heading h2 {
         font-size: 2.2rem;
     }
@@ -111,33 +107,4 @@
     .service h3 {
         font-size: 1.3rem;
     }
-}
-
-.can {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-}
-
-.can::before,
-.can::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-}
-
-.can::before {
-    left: 5%;
-    width: 95%;
-    bottom: 22%;
-    border-bottom: 4px solid #f5c14b;
-    transform: rotate(-3deg);
-}
-
-.can::after {
-    left: -2%;
-    width: 108%;
-    bottom: 10%;
-    border-bottom: 5px solid #f5c14b;
-    transform: rotate(-1deg);
 }

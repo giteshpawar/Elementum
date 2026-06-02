@@ -117,12 +117,17 @@
     z-index: 2;
 }
 
-.progress-row:first-child .image::before {
+.progress-row:first-child .image::before,
+.progress-row:last-child .image::before,
+.progress-row:last-child .image::after {
     content: "";
     position: absolute;
+    background: #ff7272;
+}
+
+.progress-row:first-child .image::before {
     width: 110px;
     height: 110px;
-    background: #ff7272;
     top: 20px;
     right: 50px;
     transform: rotate(12deg);
@@ -130,11 +135,8 @@
 }
 
 .progress-row:last-child .image::before {
-    content: "";
-    position: absolute;
     width: 110px;
     height: 95px;
-    background: #ff7272;
     left: 55px;
     top: 20px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -142,15 +144,41 @@
 }
 
 .progress-row:last-child .image::after {
-    content: "";
-    position: absolute;
     width: 95px;
     height: 85px;
-    background: #ff7272 !important;
     right: 110px;
     bottom: -10px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     z-index: 5;
+}
+
+.can {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.can::before,
+.can::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.can::before {
+    left: 5%;
+    width: 95%;
+    bottom: 22%;
+    border-bottom: 4px solid #f5c14b;
+    transform: rotate(-3deg);
+}
+
+.can::after {
+    left: -2%;
+    width: 108%;
+    bottom: 10%;
+    border-bottom: 5px solid #f5c14b;
+    transform: rotate(-1deg);
 }
 
 @media (max-width: 992px) {
@@ -169,8 +197,7 @@
     }
 
     .text p {
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
     }
 
     .image img {
@@ -275,33 +302,4 @@
         right: 45px;
         bottom: 0;
     }
-}
-
-.can {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-}
-
-.can::before,
-.can::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-}
-
-.can::before {
-    left: 5%;
-    width: 95%;
-    bottom: 22%;
-    border-bottom: 4px solid #f5c14b;
-    transform: rotate(-3deg);
-}
-
-.can::after {
-    left: -2%;
-    width: 108%;
-    bottom: 10%;
-    border-bottom: 5px solid #f5c14b;
-    transform: rotate(-1deg);
 }
